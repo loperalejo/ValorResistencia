@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imagenresistencia"
+        android:layout_width="340dp"
+        android:layout_height="152dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/resistencia" />
+
+    <Spinner
+        android:id="@+id/banda4"
+        android:layout_width="164dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:popupBackground="@drawable/tolerancia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ettolerancia"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/banda3"
+        android:layout_width="164dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:popupBackground="@drawable/codigo"
+        app:layout_constraintBottom_toTopOf="@+id/ettolerancia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ettercbanda" />
+
+    <Spinner
+        android:id="@+id/banda2"
+        android:layout_width="164dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:popupBackground="@drawable/codigo"
+        app:layout_constraintBottom_toTopOf="@+id/ettercbanda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsegbanda" />
+
+    <Spinner
+        android:id="@+id/banda"
+        android:layout_width="166dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:popupBackground="@drawable/codigo"
+        app:layout_constraintBottom_toTopOf="@+id/etsegbanda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etprimbanda" />
+
+    <TextView
+        android:id="@+id/etprimbanda"
+        android:layout_width="146dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/primer_banda"
+        app:layout_constraintBottom_toTopOf="@+id/banda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenresistencia" />
+
+    <TextView
+        android:id="@+id/etsegbanda"
+        android:layout_width="112dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/segundabanda"
+        app:layout_constraintBottom_toTopOf="@+id/banda2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banda" />
+
+    <TextView
+        android:id="@+id/ettercbanda"
+        android:layout_width="107dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tercer_banda"
+        app:layout_constraintBottom_toTopOf="@+id/banda3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banda2" />
+
+    <TextView
+        android:id="@+id/ettolerancia"
+        android:layout_width="113dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tolerancia"
+        app:layout_constraintBottom_toTopOf="@+id/banda4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banda3" />
+
+    <TextView
+        android:id="@+id/rvalue"
+        android:layout_width="170dp"
+        android:layout_height="127dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/rvalue"
+        android:textAlignment="center"
+        android:textColor="@color/coral"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenresistencia" />
+
+    <Button
+        android:id="@+id/bsbanda"
+        android:layout_width="10dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/banda10"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenresistencia"
+        app:layout_constraintStart_toEndOf="@+id/bpbanda"
+        app:layout_constraintTop_toTopOf="@+id/imagenresistencia"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <Button
+        android:id="@+id/btbanda"
+        android:layout_width="10dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/banda10"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenresistencia"
+        app:layout_constraintStart_toEndOf="@+id/bpbanda"
+        app:layout_constraintTop_toTopOf="@+id/imagenresistencia"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <Button
+        android:id="@+id/bpbanda"
+        android:layout_width="14dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/banda10"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenresistencia"
+        app:layout_constraintStart_toStartOf="@+id/imagenresistencia"
+        app:layout_constraintTop_toTopOf="@+id/imagenresistencia" />
+
+    <Button
+        android:id="@+id/bcbanda"
+        android:layout_width="14dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/banda10"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenresistencia"
+        app:layout_constraintStart_toEndOf="@+id/btbanda"
+        app:layout_constraintTop_toTopOf="@+id/imagenresistencia"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="121dp"
+        android:layout_height="159dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/banda4"
+        app:layout_constraintTop_toBottomOf="@+id/rvalue"
+        app:srcCompat="@drawable/codigocolores" />
+</android.support.constraint.ConstraintLayout>

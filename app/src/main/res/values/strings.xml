@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ValorResistencia</string>
+    <string name="tolerancia">Tolerancia</string>
+    <string name="primer_banda">Primer Banda</string>
+    <string name="segundabanda">Segunda Banda</string>
+    <string name="tercer_banda">Tercer Banda</string>
+    <string name="rvalue">Valor de Resistencia</string>
+</resources>
